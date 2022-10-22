@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="CrudMenu" class="row">
+        <div class="col-sm-6" >
+        <label for="createButton">Add a new person</label>
+        <br>
+        <input type="text" id="createInput" placeholder="First name here"> 
+        <input type="text" id="createInput2" placeholder="Last name here"> 
+        <button type="submit" id="createButton"   >Create</button>
+        <br>
+        <br>
+
+        
+
+        <label for="updateButton">Update an id</label>
+        <br>
+        <input type="text" id="updateId" placeholder="enter id here"> 
+        <input type="text" id="updateInput" placeholder="enter new first name here"> 
+        <input type="text" id="updateInput2" placeholder="enter new last name here"> 
+        <button type="submit" id="updateButton" >Update</button>
+        <br>
+        <br>
+
+        <label for="readButton">Show everyone in the system</label>
+        <br>
+        <button type="submit" id="readButton">Read</button>
+        <br>
+        <br>
+
+        <label for="deleteButton">Delete an id</label>
+        <br>
+        <input type="text" id="deleteInput" placeholder="Id to delete"> 
+        <button type="submit" id="deleteButton" class="btn btn-danger">Delete</button>
+         
+        </div>
+        <div id="displayData" class="col-sm-6">
+        </div>  
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"> </script>
+    <script src="index.js"> </script>
+    
+</body>
+</html>
